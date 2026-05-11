@@ -1,13 +1,49 @@
-.container__menu-bar {
-  margin-top: 15px;
-}
-
-.container__menu-bar > ul {
+/* Estilo padrão para desktop */
+.menu {
   display: flex;
-  flex-direction: row;
+  list-style: none;
 }
 
-.container__menu-bar > ul > li {
-  margin-right: 30px;
+.menu li {
+  margin-left: 20px;
+}
 
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: flex;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Responsivo para telas menores que 768px */
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 50px;
+    right: 50;
+    width: 200px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+  }
 }

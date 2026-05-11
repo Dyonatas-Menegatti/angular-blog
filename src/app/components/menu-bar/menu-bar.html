@@ -1,7 +1,13 @@
-<div class="container__menu-bar">
-  <ul>
-    <li><a href="https://www.linkedin.com/in/dyonatas-menegatti-07183b68">Linkedin</a></li>
-    <li><a href="https://github.com/Dyonatas-Menegatti">Github</a></li>
-    <li><a href="https://www.youtube.com/@dyoufm">Youtube</a></li>
-  </ul>
-</div>
+<nav>
+  <div class="container__menu-bar">
+    <div class="menu-toggle" (click)="alternarMenu()">&#9776;
+      <ul class="menu" [class.active]="menuAberto">
+        <li><a [routerLink]="''">Home</a></li>
+        <li><a [routerLink]="['content',1]">Noticias</a></li>
+        <li><a href="https://www.linkedin.com/in/dyonatas-menegatti-07183b68">Linkedin</a></li>
+        <li><a href="https://github.com/Dyonatas-Menegatti">Github</a></li>
+        <li><a href="https://www.youtube.com/@dyoufm">Youtube</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

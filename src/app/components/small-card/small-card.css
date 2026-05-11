@@ -24,3 +24,14 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1080px) {
+  .container__small-card{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__small-card{
+    width: 100%;
+  }
+}

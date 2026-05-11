@@ -1,0 +1,28 @@
+.container__content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__cover img {
+  width: 500px;
+  min-width: 500px;
+  height: 100%;
+}
+
+.content__description {
+  margin-top: 20px;
+}
+.content__description > p {
+  color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  .content__cover img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
